@@ -1,0 +1,10 @@
+stages:
+  process:
+    cmd: python process_data.py
+    deps:
+    - data/sample.csv
+    - process_data.py
+    outs:
+    - processed.csv
+    metrics:
+    - metrics.txt
